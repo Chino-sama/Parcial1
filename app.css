@@ -1,0 +1,86 @@
+/* General */
+
+body {
+	background-color: #fefefe;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.padded { padding: 2em; }
+
+.circle {
+	border-radius: 50%;
+	background-color: #5511FF;
+	padding: 16px;
+}
+.circle img {
+	width: 4em;
+}
+
+.margin-top {
+	margin-top: 4em;
+}
+
+.full-width { width: 100%; }
+
+.center { text-align: center; }
+
+/* Flexbox */
+
+.flex { display: flex; }
+.flex1 { flex: 1; }
+
+.row { flex-direction: row; }
+.column { flex-direction: column; }
+
+.align-items-center { align-items: center; }
+
+.justify-content-center { justify-content: center; }
+.space-between { justify-content: space-between; }
+
+/* icons */
+
+.logo-size {
+	width: 6em;
+}
+
+.star-icon {
+	width: 4.5em;
+}
+
+/* Texts */
+
+.title { 
+	font-size: 5em; 
+	color: #333;
+	margin-bottom: 16px;
+}
+.text {
+	margin: 8px 0;
+	color: #777; 
+	font-size: 2.8em; 
+}
+.subtitle {
+	font-size: 4em; 
+	color: #333;
+	margin-bottom: 1em;
+}
+
+/* Food */
+
+.food-img {
+	margin: 7em;
+	border-radius: 20px;
+}
+
+/* btn */
+
+.lebtn {
+	margin-top: 5em;
+	border-radius: 50px;
+	background-color: #5511AA;
+	color: white;
+	padding: 24px;
+	width: 75%;
+	font-size: 3em;
+}
+
