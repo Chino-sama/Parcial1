@@ -5,6 +5,41 @@
 	<link rel="stylesheet" type="text/css" href="app.css">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
+<script type="text/javascript">
+	let xhr = new XMLHttpRequest();
+	xhr.open('GET', 'https://yvone.github.io/DAW/some-numbers.json');
+
+	let res;
+	let even = [];
+	let sum = 0;
+	let x10 = [];	
+
+	xhr.onload = function () {
+		res = JSON.parse(this.response);
+		res.forEach((item) => {
+			if (item % 2 === 0)
+				even.push(item);
+			sum += item;
+			x10.push(item * 10);
+		});
+	} 
+
+	console.log(res);
+	console.log(even);
+	console.log(sum);
+	console.log(x10);
+
+	xhr.send();
+
+	function simpleAlert () {
+		alert(`
+			Original: ${res} 
+			Pares: ${even}
+			Suma: ${sum}
+			Por 10: ${x10}
+		`);
+	}
+</script>
 <body>
 	<div class="flex flex1 column padded">
 		<img class="logo-size" src="assets/logo_icon.png">
@@ -25,7 +60,7 @@
 				<img class="star-icon" src="assets/star_icon.png">
 				<img class="star-icon" src="assets/star_icon.png">
 			</div>
-			<button class="lebtn">
+			<button class="lebtn" onclick="simpleAlert()">
 				Ok!
 			</button>
 		</div>
